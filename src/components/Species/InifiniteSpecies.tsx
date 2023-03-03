@@ -8,7 +8,7 @@ const initialUrl = "https://swapi.dev/api/species/";
 
 export function InfiniteSpecies() {
   const {data, fetchNextPage, hasNextPage, isLoading, isIdle, isError, error, isFetching} = useInfiniteQuery<TPage<TSpecies>, Error>(
-    'people', 
+    'species', 
     ({pageParam = initialUrl}) => fetchUrl(pageParam), 
     {
       getNextPageParam: (lastPage) => lastPage.next || undefined
