@@ -6,13 +6,13 @@ export type TPerson = {
 
 export function Person({ name, hairColor, eyeColor }: TPerson) {
     return (
-      <li>
+      <div>
         {name}
         <ul>
           <li>hair: {hairColor}</li>
           <li>eyes: {eyeColor}</li>
         </ul>
-      </li>
+      </div>
     );
 }
   
